@@ -13,7 +13,7 @@ Step1) Build System Set-up
 Step2) Interface Implementation  
 Step3) Build and Start BMT
 
-## Step 1) Build System Set-up (Installation Guide for Ubuntu)
+## Step 1) Build System Set-up (Installation Guide for Windows)
 ### 1. Current Project Settings (Do Not Modify)
   - ISO C++17 standard (/std:c++17) is used (C++17 or higher is required).
   - References:
