@@ -34,8 +34,7 @@ Step3) Build and Start BMT
 ## Step2) Interface Implementation
 - Implement the overridden functions in the `Virtual_Submitter_Implementation` class, which inherits from the `SNU_BMT_Interface` interface, within `main.cpp`.
 - Ensure that these functions operate correctly on the intended computing unit (e.g., CPU, GPU, NPU).
-  
-![SNU_BMT_Interface_Diagram](https://github.com/user-attachments/assets/64220391-108a-47ef-b327-65fe3ce7ca26)
+![SNU_BMT_Interface_Diagram_For_README](https://github.com/user-attachments/assets/4d863c75-14df-4af1-98e0-2c623753b98c)
 
 ```cpp
 #ifndef SNU_BMT_INTERFACE_H
