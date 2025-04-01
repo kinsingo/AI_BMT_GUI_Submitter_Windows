@@ -15,7 +15,7 @@
 
 using namespace std;
 
-// Represents the result of the inference process for a single batch.
+// Represents the result of the inference process for a single query.
 // Fields:
 // - Classification_ImageNet2012_PredictedIndex_0_to_999: An integer representing the predicted class index (0-999) for the ImageNet dataset.
 struct EXPORT_SYMBOL BMTResult
@@ -84,11 +84,11 @@ public:
    virtual void Initialize() = 0;
 
    // Performs preprocessing before AI inference to convert data into the format required by the AI Processing Unit.
-   // This method prepares model input data and is excluded from latency/throughput performance measurements.
+   // This method prepares model input data and is excluded from latency and throughput performance measurements.
    // The converted data is loaded into RAM prior to invoking the runInference(..) method.
    virtual VariantType convertToPreprocessedDataForInference(const string& imagePath) = 0;
 
-   // Returns the final BMTResult value of the batch required for performance evaluation in the App.
+   // Returns the final BMTResult value of the query required for performance evaluation in the App.
    virtual vector<BMTResult> runInference(const vector<VariantType>& data) = 0;
 };
 

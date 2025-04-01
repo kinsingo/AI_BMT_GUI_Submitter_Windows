@@ -168,20 +168,19 @@ public:
     }
 };
 
-
-int main(int argc, char* argv[])
-{
-    filesystem::path exePath = filesystem::absolute(argv[0]).parent_path();// Get the current executable file path
-    filesystem::path model_path = exePath / "Model" / "Classification" / "resnet50_v2_opset10_dynamicBatch.onnx";
-    string modelPath = model_path.string();
-    try
-    {
-        shared_ptr<SNU_BMT_Interface> interface = make_shared<ImageClassification_Interface_Implementation>(modelPath);
-        SNU_BMT_GUI_CALLER caller(interface, modelPath);
-        return caller.call_BMT_GUI(argc, argv);
-    }
-    catch (const exception& ex)
-    {
-        cout << ex.what() << endl;
-    }
-}
+//int main(int argc, char* argv[])
+//{
+//    filesystem::path exePath = filesystem::absolute(argv[0]).parent_path();// Get the current executable file path
+//    filesystem::path model_path = exePath / "Model" / "Classification" / "resnet50_v2_opset10_dynamicBatch.onnx";
+//    string modelPath = model_path.string();
+//    try
+//    {
+//        shared_ptr<SNU_BMT_Interface> interface = make_shared<ImageClassification_Interface_Implementation>(modelPath);
+//        SNU_BMT_GUI_CALLER caller(interface, modelPath);
+//        return caller.call_BMT_GUI(argc, argv);
+//    }
+//    catch (const exception& ex)
+//    {
+//        cout << ex.what() << endl;
+//    }
+//}
