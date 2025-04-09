@@ -1,4 +1,4 @@
-﻿  Image_Classification_Implementaion.cpp
+﻿  main.cpp
 C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\include\snu_bmt_interface.h(27,35): warning C4251: 'BMTResult::objectDetectionResult': 'std::vector<Coco17DetectionResult,std::allocator<Coco17DetectionResult>>'에서는 'BMTResult'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 함
 C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\include\snu_bmt_interface.h(34,12): warning C4251: 'Optional_Data::cpu_type': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'에서는 'Optional_Data'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 함
 C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\include\snu_bmt_interface.h(35,12): warning C4251: 'Optional_Data::accelerator_type': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'에서는 'Optional_Data'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 함
@@ -12,42 +12,43 @@ C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\include\snu_bmt_interface.h(42,12)
 C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\include\snu_bmt_interface.h(43,12): warning C4251: 'Optional_Data::operating_system': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'에서는 'Optional_Data'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 함
 C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\include\snu_bmt_gui_caller.h(17,35): warning C4251: 'SNU_BMT_GUI_CALLER::interface': 'std::shared_ptr<SNU_BMT_Interface>'에서는 'SNU_BMT_GUI_CALLER'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 함
 C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\include\snu_bmt_gui_caller.h(18,12): warning C4251: 'SNU_BMT_GUI_CALLER::modelPath': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'에서는 'SNU_BMT_GUI_CALLER'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 함
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,39): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,39): warning C4305:         with
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,39): warning C4305:         [
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,39): warning C4305:             _Ty=float
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,39): warning C4305:         ]
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,46): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,46): warning C4305:         with
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,46): warning C4305:         [
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,46): warning C4305:             _Ty=float
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,46): warning C4305:         ]
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,53): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,53): warning C4305:         with
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,53): warning C4305:         [
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,53): warning C4305:             _Ty=float
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(106,53): warning C4305:         ]
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,38): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,38): warning C4305:         with
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,38): warning C4305:         [
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,38): warning C4305:             _Ty=float
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,38): warning C4305:         ]
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,45): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,45): warning C4305:         with
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,45): warning C4305:         [
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,45): warning C4305:             _Ty=float
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,45): warning C4305:         ]
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,52): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,52): warning C4305:         with
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,52): warning C4305:         [
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,52): warning C4305:             _Ty=float
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(107,52): warning C4305:         ]
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(124,40): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(124,29): warning C4267: '초기화 중': 'size_t'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Image_Classification_Implementaion.cpp(163,78): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,39): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,39): warning C4305:         with
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,39): warning C4305:         [
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,39): warning C4305:             _Ty=float
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,39): warning C4305:         ]
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,46): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,46): warning C4305:         with
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,46): warning C4305:         [
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,46): warning C4305:             _Ty=float
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,46): warning C4305:         ]
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,53): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,53): warning C4305:         with
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,53): warning C4305:         [
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,53): warning C4305:             _Ty=float
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(106,53): warning C4305:         ]
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,38): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,38): warning C4305:         with
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,38): warning C4305:         [
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,38): warning C4305:             _Ty=float
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,38): warning C4305:         ]
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,45): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,45): warning C4305:         with
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,45): warning C4305:         [
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,45): warning C4305:             _Ty=float
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,45): warning C4305:         ]
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,52): warning C4305: '초기화 중': 'double'에서 '_Ty'(으)로 잘립니다.
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,52): warning C4305:         with
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,52): warning C4305:         [
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,52): warning C4305:             _Ty=float
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(107,52): warning C4305:         ]
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(124,40): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(124,29): warning C4267: '초기화 중': 'size_t'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(163,78): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\x64\Release\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit.lib 라이브러리 및 C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\x64\Release\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit.exp 개체를 생성하고 있습니다.
   코드를 생성하고 있습니다.
-  Previous IPDB and IOBJ mismatch, fall back to full compilation.
-  All 969 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  6 of 969 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+    4 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
   SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit.vcxproj -> C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\x64\Release\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit.exe
