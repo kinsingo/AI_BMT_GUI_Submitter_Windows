@@ -17,11 +17,11 @@ using namespace std;
 
 // Represents the result of the inference process for a single query.
 // Fields:
-// - Classification_ImageNet2012_PredictedIndex_0_to_999: An integer representing the predicted class index (0-999) for the ImageNet dataset.
+// - Classification_ImageNet_PredictedIndex_0_to_999: An integer representing the predicted class index (0-999) for the ImageNet dataset.
 struct EXPORT_SYMBOL BMTResult
 {
     // While conducting Classification BMT, if the value is not between 0 and 999, it indicates that the result has not been updated and will be treated as an error.
-    int Classification_ImageNet2012_PredictedIndex_0_to_999 = -1;
+    int Classification_ImageNet_PredictedIndex_0_to_999 = -1;
 
     // While conducting Object Detection BMT
     vector<Coco17DetectionResult> objectDetectionResult;

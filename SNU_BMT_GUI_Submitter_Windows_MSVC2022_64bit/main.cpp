@@ -160,7 +160,7 @@ public:
                 size_t max_idx = std::distance(start, maxElementIt);
 
                 BMTResult result;
-                result.Classification_ImageNet2012_PredictedIndex_0_to_999 = max_idx;
+                result.Classification_ImageNet_PredictedIndex_0_to_999 = max_idx;
                 results.push_back(result);
             }
         }

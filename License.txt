@@ -1,0 +1,32 @@
+Our platform provides the following datasets for evaluation purposes.
+
+────────────────────────────────────────────────────────────
+1. ImageNetV2
+────────────────────────────────────────────────────────────
+• Source: https://github.com/modestyachts/ImageNetV2  
+• License: Creative Commons Attribution 4.0 International (CC BY 4.0)  
+  You are free to:
+   - Share — copy and redistribute the material in any medium or format  
+   - Adapt — remix, transform, and build upon the material  
+  Under the following terms:
+   - Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.  
+  • License Text: https://creativecommons.org/licenses/by/4.0
+
+────────────────────────────────────────────────────────────
+2. COCO 2017
+────────────────────────────────────────────────────────────
+• Source: https://cocodataset.org/#download  
+• License: Creative Commons Attribution 4.0 International (CC BY 4.0)  
+  You are free to:
+   - Share and adapt the material for any purpose, even commercially  
+  Under the following terms:
+   - Attribution — You must give appropriate credit and indicate if changes were made.  
+  • License Text: https://creativecommons.org/licenses/by/4.0
+
+────────────────────────────────────────────────────────────
+Redistribution and modification of these datasets are permitted under the terms of the original licenses listed above.  
+All derived content remains subject to those terms. If you use these datasets, you must provide proper attribution to the original authors.
+
+For inquiries or licensing concerns, please contact:  
+Jonghyun Shin (Seoul National University)  
+📧 jonghyun_shin@naver.com
