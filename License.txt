@@ -32,7 +32,3 @@ Please cite the original dataset creators as follows:
 ────────────────────────────────────────────────────────────
 All redistributed and derived content complies with the terms of the original licenses listed above.  
 If you use these datasets or the modified versions, you must provide proper attribution to the original authors and indicate any modifications made.
-
-For inquiries or licensing concerns, please contact:  
-Jonghyun Shin (Seoul National University)  
-📧 jonghyun_shin@naver.com
