@@ -18,13 +18,11 @@ struct Coco17Result
 
 struct Coco17Label : Coco17Result
 {
-    int image_width = -1;//250206
-    int image_height = -1;//250206
     Coco17Label()
-        : Coco17Result(), image_width(-1),image_height(-1) {}
+        : Coco17Result() {}
 
-    Coco17Label(int cls, float x, float y, float w, float h, int image_width, int image_height)
-        : Coco17Result(cls, x, y, w, h), image_width(image_width),image_height(image_height) {}
+    Coco17Label(int cls, float x, float y, float w, float h)
+        : Coco17Result(cls, x, y, w, h) {}
 };
 
 struct Coco17DetectionResult : Coco17Result

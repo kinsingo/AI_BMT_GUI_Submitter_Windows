@@ -22,6 +22,12 @@
     <Filter Include="소스 파일\example\classification\cpu">
       <UniqueIdentifier>{9c8e0dd0-2c09-4296-9c1a-b9e566cc3224}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\example\objectDetection">
+      <UniqueIdentifier>{07f6c327-9d93-4ad7-8921-11a7dcfed597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\example\objectDetection\cpu">
+      <UniqueIdentifier>{3d5cd3a9-edeb-4680-b624-d22c81959b96}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -29,6 +35,9 @@
     </ClCompile>
     <ClCompile Include="Image_Classification_Implementaion.cpp">
       <Filter>소스 파일\example\classification\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectDetection_Implementation.cpp">
+      <Filter>소스 파일\example\objectDetection\cpu</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -137,6 +137,7 @@
   <ItemGroup>
     <ClCompile Include="Image_Classification_Implementaion.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ObjectDetection_Implementation.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

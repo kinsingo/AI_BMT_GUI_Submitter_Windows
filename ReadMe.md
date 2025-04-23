@@ -1,4 +1,4 @@
-> **Last Updated:** 2025-04-15
+> **Last Updated:** 2025-04-23 — Object Detection is now supported (example code included)
 ## Environment
 1. ISA(Instruction Set Architecture) : AMD64(x86_64)
 2. OS : Windows 10

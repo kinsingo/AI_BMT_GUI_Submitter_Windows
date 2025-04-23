@@ -15,13 +15,6 @@ using namespace std;
 using namespace cv;
 using namespace Ort;
 
-//onnx option setting
-constexpr int64_t numChannels = 3;
-constexpr int64_t width = 224;
-constexpr int64_t height = 224;
-constexpr int64_t numClasses = 1000;
-constexpr int64_t numInputElements = numChannels * height * width;
-
 //[Model Recommendation]
 // The loaded model should be stored as a member variable to be used in the runInference function.
 // This approach ensures that the model loading time is not included in the runInference function's execution time.
@@ -42,7 +35,6 @@ private:
     array<const char*, 1> outputNames;
     MemoryInfo memory_info = Ort::MemoryInfo::CreateCpu(OrtDeviceAllocator, OrtMemTypeCPU);
     string modelPath;
-    const int OpNumThread = 4;
 public:
     ImageClassification_Interface_Implementation(string modelPath)
     {
@@ -54,8 +46,6 @@ public:
         //session initializer
         SessionOptions sessionOptions;
         sessionOptions.SetExecutionMode(ExecutionMode::ORT_SEQUENTIAL);
-        sessionOptions.SetInterOpNumThreads(OpNumThread);//multi thread operation
-        cout << "Using " << OpNumThread << " threads for inference." << endl;
         sessionOptions.SetGraphOptimizationLevel(GraphOptimizationLevel::ORT_ENABLE_EXTENDED);
         wstring modelPathwstr(modelPath.begin(), modelPath.end());
         session = make_shared<Session>(env, modelPathwstr.c_str(), sessionOptions);
@@ -93,9 +83,10 @@ public:
             throw runtime_error("Failed to load image: " + imagePath);
         }
 
+        // convert BGR to RGB before reshaping
         cvtColor(image, image, cv::COLOR_BGR2RGB);
 
-        // reshape to 1D
+        // reshape (3D -> 1D)
         image = image.reshape(1, 1);
 
         // uint_8, [0, 255] -> float, [0 and 1] => Normalize number to between 0 and 1, Convert to vector<float> from cv::Mat.
@@ -124,63 +115,51 @@ public:
         const int querySize = data.size();
         vector<BMTResult> results;
 
-        for (int startIdx = 0; startIdx < querySize; startIdx += OpNumThread) {
-            const int batchSize = min(OpNumThread, querySize - startIdx);
-            const array<int64_t, 4> batchInputShape = { batchSize, numChannels, height, width };
-            const array<int64_t, 2> batchOutputShape = { batchSize, numClasses };
+        //onnx option setting
+        const array<int64_t, 4> inputShape = { 1, 3, 224, 224 };
+        const array<int64_t, 2> outputShape = { 1, 1000 };
 
-            vector<float> batchInput(batchSize * numInputElements);
-            vector<float> batchResults(batchSize * numClasses);
-
-            for (int i = 0; i < batchSize; i++) {
-                vector<float> imageVec;
-                try {
-                    imageVec = get<BMTDataType>(data[startIdx + i]);
-                }
-                catch (const std::bad_variant_access& e) {
-                    cerr << "Error: bad_variant_access at index " << (startIdx + i) << ". Reason: " << e.what() << endl;
-                    continue;
-                }
-                if (imageVec.size() != numInputElements) {
-                    cout << "Invalid image format. Must be 224x224 RGB image." << endl;
-                    continue;
-                }
-                std::copy(imageVec.begin(), imageVec.end(), batchInput.begin() + i * numInputElements);
+        for (int i = 0; i < querySize; ++i) {
+            // Prepare input/output tensors
+            BMTDataType imageVec;
+            try {
+                imageVec = get<BMTDataType>(data[i]);
             }
+            catch (const std::bad_variant_access& e) {
+                cerr << "Error: bad_variant_access at index " << i << ". Reason: " << e.what() << endl;
+                continue;
+            }
+            vector<float> outputData(1000);
+            auto inputTensor = Ort::Value::CreateTensor<float>(memory_info, imageVec.data(), imageVec.size(), inputShape.data(), inputShape.size());
+            auto outputTensor = Ort::Value::CreateTensor<float>(memory_info, outputData.data(), outputData.size(), outputShape.data(), outputShape.size());
 
-            auto inputTensor = Ort::Value::CreateTensor<float>(memory_info, batchInput.data(), batchInput.size(), batchInputShape.data(), batchInputShape.size());
-            auto outputTensor = Ort::Value::CreateTensor<float>(memory_info, batchResults.data(), batchResults.size(), batchOutputShape.data(), batchOutputShape.size());
-
+            // Run inference
             session->Run(runOptions, inputNames.data(), &inputTensor, 1, outputNames.data(), &outputTensor, 1);
 
-            for (int i = 0; i < batchSize; ++i) {
-                auto start = batchResults.begin() + i * numClasses;
-                auto end = start + numClasses;
-                auto maxElementIt = std::max_element(start, end);
-                size_t max_idx = std::distance(start, maxElementIt);
-
-                BMTResult result;
-                result.Classification_ImageNet_PredictedIndex_0_to_999 = max_idx;
-                results.push_back(result);
-            }
+            // Update results
+            BMTResult result;
+            result.classProbabilities = outputData;
+            results.push_back(result);
         }
+
         return results;
     }
 };
 
-//int main(int argc, char* argv[])
-//{
-//    filesystem::path exePath = filesystem::absolute(argv[0]).parent_path();// Get the current executable file path
-//    filesystem::path model_path = exePath / "Model" / "Classification" / "resnet50_v2_opset10_dynamicBatch.onnx";
-//    string modelPath = model_path.string();
-//    try
-//    {
-//        shared_ptr<SNU_BMT_Interface> interface = make_shared<ImageClassification_Interface_Implementation>(modelPath);
-//        SNU_BMT_GUI_CALLER caller(interface, modelPath);
-//        return caller.call_BMT_GUI(argc, argv);
-//    }
-//    catch (const exception& ex)
-//    {
-//        cout << ex.what() << endl;
-//    }
-//}
+/*
+int main(int argc, char* argv[])
+{
+    filesystem::path exePath = filesystem::absolute(argv[0]).parent_path();// Get the current executable file path
+    filesystem::path model_path = exePath / "Model" / "Classification" / "resnet50_opset10.onnx";
+    string modelPath = model_path.string();
+    try
+    {
+        shared_ptr<SNU_BMT_Interface> interface = make_shared<ImageClassification_Interface_Implementation>(modelPath);
+        SNU_BMT_GUI_CALLER caller(interface, modelPath);
+        return caller.call_BMT_GUI(argc, argv);
+    }
+    catch (const exception& ex)
+    {
+        cout << ex.what() << endl;
+    }
+}*/

@@ -20,11 +20,15 @@ using namespace std;
 // - Classification_ImageNet_PredictedIndex_0_to_999: An integer representing the predicted class index (0-999) for the ImageNet dataset.
 struct EXPORT_SYMBOL BMTResult
 {
-    // While conducting Classification BMT, if the value is not between 0 and 999, it indicates that the result has not been updated and will be treated as an error.
-    int Classification_ImageNet_PredictedIndex_0_to_999 = -1;
+    // Output scores for 1000 ImageNet classes from the classification model.
+    // Each element represents the probability or confidence score for a class.
+    vector<float> classProbabilities;
 
-    // While conducting Object Detection BMT
-    vector<Coco17DetectionResult> objectDetectionResult;
+    // Output tensor from object detection model.
+    // The vector stores raw model outputs for 25200 detection candidates.
+    // Each candidate includes 85 values: [x, y, w, h, objectness, 80 class scores].
+    // Total size must be exactly 25200 * 85 = 2,142,000 elements.
+    vector<float> objectDetectionResult;
 };
 
 // Stores optional system configuration data provided by the Submitter.
