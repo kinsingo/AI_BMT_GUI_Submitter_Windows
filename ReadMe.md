@@ -43,12 +43,11 @@ Step3) Build and Start BMT
 using namespace std;
 
 // Represents the result of the inference process for a single query.
-// Fields:
-// - Classification_ImageNet_PredictedIndex_0_to_999: An integer representing the predicted class index (0-999) for the ImageNet dataset.
 struct EXPORT_SYMBOL BMTResult
 {
     // Output scores for 1000 ImageNet classes from the classification model.
     // Each element represents the probability or confidence score for a class.
+    // Total size must be exactly 1,000 elements.
     vector<float> classProbabilities;
 
     // Output tensor from object detection model.
