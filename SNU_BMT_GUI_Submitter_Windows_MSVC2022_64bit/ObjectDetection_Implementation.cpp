@@ -143,7 +143,7 @@ int main(int argc, char* argv[])
     string modelPath = model_path.string();
     try
     {
-        shared_ptr<SNU_BMT_Interface> interface = make_shared<ImageClassification_Interface_Implementation>(modelPath);
+        shared_ptr<SNU_BMT_Interface> interface = make_shared<OnjectDetection_Interface_Implementation>(modelPath);
         SNU_BMT_GUI_CALLER caller(interface, modelPath);
         return caller.call_BMT_GUI(argc, argv);
     }
