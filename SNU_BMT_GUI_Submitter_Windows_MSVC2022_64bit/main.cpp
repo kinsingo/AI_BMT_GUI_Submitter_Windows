@@ -56,9 +56,6 @@ public:
         AllocatedStringPtr outputName = session->GetOutputNameAllocated(0, allocator);
         inputNames = { inputName.get() };
         outputNames = { outputName.get() };
-
-        cout << "Input Name: " << inputNames.data() << endl;
-		cout << "Output Name: " << outputNames.data() << endl;
         inputName.release();
         outputName.release();
     }
@@ -74,7 +71,7 @@ public:
         data.cooling = ""; // e.g., Air, Liquid, Passive
         data.cooling_option = ""; // e.g., Active, Passive (Active = with fan/pump, Passive = without fan)
         data.cpu_accelerator_interconnect_interface = ""; // e.g., PCIe Gen5 x16
-        data.benchmark_model = "yolov5n_opset12"; // e.g., ResNet-50
+        data.benchmark_model = "yolov5s_opset12"; // e.g., ResNet-50
         data.operating_system = ""; // e.g., Ubuntu 20.04.5 LTS
         return data;
     }
@@ -106,6 +103,8 @@ public:
 
     virtual vector<BMTResult> runInference(const vector<VariantType>& data) override
     {
+        cout << "runInference is called" << endl;
+
         //onnx option setting
         const int querySize = data.size();
         vector<BMTResult> results;
@@ -142,7 +141,7 @@ public:
 int main(int argc, char* argv[])
 {
     filesystem::path exePath = filesystem::absolute(argv[0]).parent_path();// Get the current executable file path
-    filesystem::path model_path = exePath / "Model" / "ObjectDetection" / "yolov5n_opset12.onnx";
+    filesystem::path model_path = exePath / "Model" / "ObjectDetection" / "yolov5s_opset12.onnx";
     string modelPath = model_path.string();
     try
     {
