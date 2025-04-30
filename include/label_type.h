@@ -16,15 +16,6 @@ struct Coco17Result
         : classIndex(cls), top_left_x(x), top_left_y(y), width(w), height(h) {}
 };
 
-struct Coco17Label : Coco17Result
-{
-    Coco17Label()
-        : Coco17Result() {}
-
-    Coco17Label(int cls, float x, float y, float w, float h)
-        : Coco17Result(cls, x, y, w, h) {}
-};
-
 struct Coco17DetectionResult : Coco17Result
 {
     float confidence =-1;
