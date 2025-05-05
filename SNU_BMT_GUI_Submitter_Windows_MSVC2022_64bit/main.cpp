@@ -109,10 +109,12 @@ public:
         const int querySize = data.size();
         vector<BMTResult> results;
         array<int64_t, 4> inputShape = { 1, 3, 640, 640 };
-        array<int64_t, 3> outputShape = { 1, 25200, 85 };
 
+        //array<int64_t, 3> outputShape = { 1, 25200, 85 }; //Yolov5
+        //array<int64_t, 3> outputShape = { 1, 84, 8400 }; //Yolov5u, Yolov8, Yolov9, Yolo11, Yolo12
+        array<int64_t, 3> outputShape = { 1, 300, 6 }; //Yolov10
+        
         for (int i = 0; i < querySize; i++) {
-            // Prepare input/output tensors
             BMTDataType imageVec;
             try {
                 imageVec = get<BMTDataType>(data[i]);
@@ -121,7 +123,7 @@ public:
                 string errorMessage = "Error: bad_variant_access at index " + to_string(i) + ": " + e.what();
                 throw runtime_error(errorMessage.c_str());
             }
-            vector<float> outputData(25200 * 85);
+            vector<float> outputData(outputShape[1] * outputShape[2]);
             auto inputTensor = Ort::Value::CreateTensor<float>(memory_info, imageVec.data(), imageVec.size(), inputShape.data(), inputShape.size());
             auto outputTensor = Value::CreateTensor<float>(memory_info, outputData.data(), outputData.size(), outputShape.data(), outputShape.size());
 
@@ -140,7 +142,7 @@ public:
 int main(int argc, char* argv[])
 {
     filesystem::path exePath = filesystem::absolute(argv[0]).parent_path();// Get the current executable file path
-    filesystem::path model_path = exePath / "Model" / "ObjectDetection" / "yolov5n_opset12.onnx";
+    filesystem::path model_path = exePath / "Model" / "ObjectDetection" / "yolov10n_opset12.onnx";
     string modelPath = model_path.string();
     try
     {

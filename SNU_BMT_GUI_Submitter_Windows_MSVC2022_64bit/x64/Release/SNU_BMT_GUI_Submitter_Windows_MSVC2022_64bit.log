@@ -17,8 +17,8 @@ C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC
 C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit\main.cpp(109,29): warning C4267: '초기화 중': 'size_t'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
      C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\x64\Release\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit.lib 라이브러리 및 C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\x64\Release\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit.exp 개체를 생성하고 있습니다.
   코드를 생성하고 있습니다.
-  1 of 908 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+  5 of 909 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
   SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit.vcxproj -> C:\SJH_Programs\SNU_BMT_GUI_Submitter_Windows\x64\Release\SNU_BMT_GUI_Submitter_Windows_MSVC2022_64bit.exe
