@@ -34,14 +34,9 @@ private:
     array<const char*, 1> inputNames;
     array<const char*, 1> outputNames;
     MemoryInfo memory_info = Ort::MemoryInfo::CreateCpu(OrtDeviceAllocator, OrtMemTypeCPU);
-    string modelPath;
-public:
-    ImageClassification_Interface_Implementation(string modelPath)
-    {
-        this->modelPath = modelPath;
-    }
 
-    virtual void Initialize() override
+public:
+    virtual void Initialize(string modelPath) override
     {
         //session initializer
         SessionOptions sessionOptions;
@@ -63,16 +58,16 @@ public:
     virtual Optional_Data getOptionalData() override
     {
         Optional_Data data;
-        data.cpu_type = ""; // e.g., Intel i7-9750HF
+        data.cpu_type = "Intel(R) Core(TM) i5-14500"; // e.g., Intel i7-9750HF
         data.accelerator_type = ""; // e.g., DeepX M1(NPU)
-        data.submitter = ""; // e.g., DeepX
-        data.cpu_core_count = ""; // e.g., 16
+        data.submitter = "Jonghyun CAPP Lab PC"; // e.g., DeepX
+        data.cpu_core_count = "14"; // e.g., 16
         data.cpu_ram_capacity = ""; // e.g., 32GB
         data.cooling = ""; // e.g., Air, Liquid, Passive
         data.cooling_option = ""; // e.g., Active, Passive (Active = with fan/pump, Passive = without fan)
         data.cpu_accelerator_interconnect_interface = ""; // e.g., PCIe Gen5 x16
         data.benchmark_model = ""; // e.g., ResNet-50
-        data.operating_system = ""; // e.g., Ubuntu 20.04.5 LTS
+        data.operating_system = "Windows"; // e.g., Ubuntu 20.04.5 LTS
         return data;
     }
 
@@ -154,7 +149,7 @@ int main(int argc, char* argv[])
     string modelPath = model_path.string();
     try
     {
-        shared_ptr<SNU_BMT_Interface> interface = make_shared<ImageClassification_Interface_Implementation>(modelPath);
+        shared_ptr<SNU_BMT_Interface> interface = make_shared<ImageClassification_Interface_Implementation>();
         SNU_BMT_GUI_CALLER caller(interface, modelPath);
         return caller.call_BMT_GUI(argc, argv);
     }

@@ -34,14 +34,9 @@ private:
     array<const char*, 1> inputNames;
     array<const char*, 1> outputNames;
     MemoryInfo memory_info = Ort::MemoryInfo::CreateCpu(OrtDeviceAllocator, OrtMemTypeCPU);
-    string modelPath;
-public:
-    OnjectDetection_Interface_Implementation(string modelPath)
-    {
-        this->modelPath = modelPath;
-    }
 
-    virtual void Initialize() override
+public:
+    virtual void Initialize(string modelPath) override
     {
         //session initializer
         SessionOptions sessionOptions;
@@ -63,16 +58,16 @@ public:
     virtual Optional_Data getOptionalData() override
     {
         Optional_Data data;
-        data.cpu_type = ""; // e.g., Intel i7-9750HF
+        data.cpu_type = "Intel(R) Core(TM) i5-14500"; // e.g., Intel i7-9750HF
         data.accelerator_type = ""; // e.g., DeepX M1(NPU)
-        data.submitter = ""; // e.g., DeepX
-        data.cpu_core_count = ""; // e.g., 16
+        data.submitter = "Jonghyun CAPP Lab PC"; // e.g., DeepX
+        data.cpu_core_count = "14"; // e.g., 16
         data.cpu_ram_capacity = ""; // e.g., 32GB
         data.cooling = ""; // e.g., Air, Liquid, Passive
         data.cooling_option = ""; // e.g., Active, Passive (Active = with fan/pump, Passive = without fan)
         data.cpu_accelerator_interconnect_interface = ""; // e.g., PCIe Gen5 x16
-        data.benchmark_model = "yolov5n_opset12"; // e.g., ResNet-50
-        data.operating_system = ""; // e.g., Ubuntu 20.04.5 LTS
+        data.benchmark_model = ""; // e.g., ResNet-50
+        data.operating_system = "Windows"; // e.g., Ubuntu 20.04.5 LTS
         return data;
     }
 
@@ -103,14 +98,18 @@ public:
 
     virtual vector<BMTResult> runInference(const vector<VariantType>& data) override
     {
+        cout << "runInference" << endl;
+
         //onnx option setting
         const int querySize = data.size();
         vector<BMTResult> results;
         array<int64_t, 4> inputShape = { 1, 3, 640, 640 };
-        array<int64_t, 3> outputShape = { 1, 25200, 85 };
+
+        //array<int64_t, 3> outputShape = { 1, 25200, 85 }; //Yolov5
+        //array<int64_t, 3> outputShape = { 1, 84, 8400 }; //Yolov5u, Yolov8, Yolov9, Yolo11, Yolo12
+        array<int64_t, 3> outputShape = { 1, 300, 6 }; //Yolov10
 
         for (int i = 0; i < querySize; i++) {
-            // Prepare input/output tensors
             BMTDataType imageVec;
             try {
                 imageVec = get<BMTDataType>(data[i]);
@@ -119,13 +118,13 @@ public:
                 string errorMessage = "Error: bad_variant_access at index " + to_string(i) + ": " + e.what();
                 throw runtime_error(errorMessage.c_str());
             }
-            vector<float> outputData(25200 * 85);
+            vector<float> outputData(outputShape[1] * outputShape[2]);
             auto inputTensor = Ort::Value::CreateTensor<float>(memory_info, imageVec.data(), imageVec.size(), inputShape.data(), inputShape.size());
             auto outputTensor = Value::CreateTensor<float>(memory_info, outputData.data(), outputData.size(), outputShape.data(), outputShape.size());
-            
+
             // Run inference
             session->Run(runOptions, inputNames.data(), &inputTensor, 1, outputNames.data(), &outputTensor, 1);
-            
+
             // Update results
             BMTResult result;
             result.objectDetectionResult = outputData;
@@ -139,11 +138,11 @@ public:
 int main(int argc, char* argv[])
 {
     filesystem::path exePath = filesystem::absolute(argv[0]).parent_path();// Get the current executable file path
-    filesystem::path model_path = exePath / "Model" / "ObjectDetection" / "yolov5n_opset12.onnx";
+    filesystem::path model_path = exePath / "Model" / "ObjectDetection" / "yolov10n_opset12.onnx";
     string modelPath = model_path.string();
     try
     {
-        shared_ptr<SNU_BMT_Interface> interface = make_shared<OnjectDetection_Interface_Implementation>(modelPath);
+        shared_ptr<SNU_BMT_Interface> interface = make_shared<OnjectDetection_Interface_Implementation>();
         SNU_BMT_GUI_CALLER caller(interface, modelPath);
         return caller.call_BMT_GUI(argc, argv);
     }

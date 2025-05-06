@@ -84,7 +84,8 @@ public:
    // It is recommended to use this instead of a constructor,
    // as it allows handling additional errors that cannot be managed within the constructor.
    // The Initialize function is guaranteed to be called before convertToData and runInference are executed.
-   virtual void Initialize() = 0;
+   // The submitter can load the model using the provided modelPath
+   virtual void Initialize(string modelPath) = 0;
 
    // Performs preprocessing before AI inference to convert data into the format required by the AI Processing Unit.
    // This method prepares model input data and is excluded from latency and throughput performance measurements.
