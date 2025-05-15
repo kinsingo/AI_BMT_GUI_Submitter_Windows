@@ -112,7 +112,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)\lib;$(SolutionDir)\lib\onnxruntime;$(SolutionDir)\lib\opencv3416</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SNU_AI_BMT_GUI_Library.lib;onnxruntime.lib;onnxruntime_providers_shared.lib;opencv_world3416d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>AI_BMT_GUI_Library.lib;onnxruntime.lib;onnxruntime_providers_shared.lib;opencv_world3416d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -132,7 +132,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)\lib;$(SolutionDir)\lib\onnxruntime;$(SolutionDir)\lib\opencv3416</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SNU_AI_BMT_GUI_Library.lib;onnxruntime.lib;onnxruntime_providers_shared.lib;opencv_world3416.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>AI_BMT_GUI_Library.lib;onnxruntime.lib;onnxruntime_providers_shared.lib;opencv_world3416.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

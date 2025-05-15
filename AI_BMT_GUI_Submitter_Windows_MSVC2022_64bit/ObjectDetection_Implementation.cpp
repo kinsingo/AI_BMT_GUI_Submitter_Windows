@@ -1,5 +1,5 @@
-#include "snu_bmt_gui_caller.h"
-#include "snu_bmt_interface.h"
+#include "ai_bmt_gui_caller.h"
+#include "ai_bmt_interface.h"
 #include <thread>
 #include <chrono>
 #include <iostream>
@@ -24,8 +24,8 @@ using namespace Ort;
 // If you use unmanaged data types such as dynamic arrays (e.g., int* data = new int[...]), you must ensure that they are properly deleted at the end of runInference() definition.
 using BMTDataType = vector<float>;
 
-// To view detailed information on what and how to implement for "SNU_BMT_Interface," navigate to its definition (e.g., in Visual Studio/VSCode: Press F12).
-class OnjectDetection_Interface_Implementation : public SNU_BMT_Interface
+// To view detailed information on what and how to implement for "AI_BMT_Interface," navigate to its definition (e.g., in Visual Studio/VSCode: Press F12).
+class OnjectDetection_Interface_Implementation : public AI_BMT_Interface
 {
 private:
     Env env;
@@ -60,7 +60,7 @@ public:
         Optional_Data data;
         data.cpu_type = "Intel(R) Core(TM) i5-14500"; // e.g., Intel i7-9750HF
         data.accelerator_type = ""; // e.g., DeepX M1(NPU)
-        data.submitter = "Jonghyun CAPP Lab PC"; // e.g., DeepX
+        data.submitter = ""; // e.g., DeepX
         data.cpu_core_count = "14"; // e.g., 16
         data.cpu_ram_capacity = ""; // e.g., 32GB
         data.cooling = ""; // e.g., Air, Liquid, Passive
@@ -142,8 +142,8 @@ int main(int argc, char* argv[])
     string modelPath = model_path.string();
     try
     {
-        shared_ptr<SNU_BMT_Interface> interface = make_shared<OnjectDetection_Interface_Implementation>();
-        SNU_BMT_GUI_CALLER caller(interface, modelPath);
+        shared_ptr<AI_BMT_Interface> interface = make_shared<OnjectDetection_Interface_Implementation>();
+        AI_BMT_GUI_CALLER caller(interface, modelPath);
         return caller.call_BMT_GUI(argc, argv);
     }
     catch (const exception& ex)
