@@ -83,10 +83,10 @@ using VariantType = variant<uint8_t*, uint16_t*, uint32_t*,
                             vector<int8_t>, vector<int16_t>, vector<int32_t>,
                             vector<float>>; // Define variant vector types
 
-class EXPORT_SYMBOL SNU_BMT_Interface
+class EXPORT_SYMBOL AI_BMT_Interface
 {
 public:
-   virtual ~SNU_BMT_Interface(){}
+   virtual ~AI_BMT_Interface(){}
 
    // This is not mandatory but can be implemented if needed.
    // The virtual function getOptionalData() returns an Optional_Data object,
@@ -113,16 +113,17 @@ public:
    // The Initialize function is guaranteed to be called before convertToData and runInference are executed.
    // The submitter can load the model using the provided modelPath
    virtual void Initialize(string modelPath) = 0;
-   
+
    // Performs preprocessing before AI inference to convert data into the format required by the AI Processing Unit.
-   // This method prepares model input data and is excluded from latency/throughput performance measurements.
+   // This method prepares model input data and is excluded from latency and throughput performance measurements.
    // The converted data is loaded into RAM prior to invoking the runInference(..) method.
    virtual VariantType convertToPreprocessedDataForInference(const string& imagePath) = 0;
 
-   // Returns the final BMTResult value of the batch required for performance evaluation in the App.
+   // Returns the final BMTResult value of the query required for performance evaluation in the App.
    virtual vector<BMTResult> runInference(const vector<VariantType>& data) = 0;
 };
-#endif // SNU_BMT_INTERFACE_H
+
+#endif // AI_BMT_INTERFACE_H
 ```
 
 ## Step3) Build and Start BMT
