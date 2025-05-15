@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Image_Classification_Implementaion.cpp">
+      <Filter>example\classification</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectDetection_Implementation.cpp">
+      <Filter>example\objectDetection</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="example">
+      <UniqueIdentifier>{38dc2b0d-096b-4571-9811-c8aac097e137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\classification">
+      <UniqueIdentifier>{8228b4d1-4735-4a75-9ebe-941e6e4fd0c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\objectDetection">
+      <UniqueIdentifier>{518f93a2-1976-4196-8d9d-060ff3752366}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
