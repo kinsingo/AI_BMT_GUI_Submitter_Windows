@@ -137,6 +137,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Image_Classification_Implementaion.cpp" />
+    <ClCompile Include="Image_Segmentation_Implementation.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ObjectDetection_Implementation.cpp" />
   </ItemGroup>

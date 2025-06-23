@@ -25,7 +25,7 @@ using namespace Ort;
 using BMTDataType = vector<float>;
 
 // To view detailed information on what and how to implement for "AI_BMT_Interface," navigate to its definition (e.g., in Visual Studio/VSCode: Press F12).
-class OnjectDetection_Interface_Implementation : public AI_BMT_Interface
+class ImageSegmentation_Interface_Implementation : public AI_BMT_Interface
 {
 private:
     Env env;
@@ -73,76 +73,85 @@ public:
 
     virtual VariantType convertToPreprocessedDataForInference(const string& imagePath) override
     {
-        // Load padded image
         Mat image = imread(imagePath);
         if (image.empty()) {
-            cerr << "Image not found at: " << imagePath << endl;
-            throw runtime_error("Image not found!");
+            throw runtime_error("Failed to load image: " + imagePath);
         }
 
-        //Convert to float and normalize
-        Mat floatImg;
-        image.convertTo(floatImg, CV_32FC3, 1.0 / 255.0);
-        cvtColor(floatImg, floatImg, COLOR_BGR2RGB);
+        // convert BGR to RGB before reshaping
+        cvtColor(image, image, cv::COLOR_BGR2RGB);
 
-        //HWC → CHW
-        vector<Mat> chw;
-        split(floatImg, chw);
-        BMTDataType inputTensorValues;
-        for (int c = 0; c < 3; ++c) {
-            inputTensorValues.insert(inputTensorValues.end(),
-                (float*)chw[c].datastart, (float*)chw[c].dataend);
+        // reshape (3D -> 1D)
+        image = image.reshape(1, 1);
+
+        // uint_8, [0, 255] -> float, [0 and 1] => Normalize number to between 0 and 1, Convert to vector<float> from cv::Mat.
+        vector<float> vec;
+        image.convertTo(vec, CV_32FC1, 1. / 255);
+
+        // Mean and Std deviation values
+        const vector<float> means = { 0.485, 0.456, 0.406 };
+        const vector<float> stds = { 0.229, 0.224, 0.225 };
+
+        // Transpose (Height, Width, Channel)(224,224,3) to (Chanel, Height, Width)(3,224,224)
+        vector<float> output;
+        for (size_t ch = 0; ch < 3; ++ch)
+        {
+            for (size_t i = ch; i < vec.size(); i += 3)
+            {
+                float normalized = (vec[i] - means[ch]) / stds[ch];
+                output.emplace_back(normalized);
+            }
         }
-        return inputTensorValues;
+        return output;
     }
 
     virtual vector<BMTResult> runInference(const vector<VariantType>& data) override
     {
-        cout << "runInference" << endl;
-
-        //onnx option setting
         const int querySize = data.size();
         vector<BMTResult> results;
-        array<int64_t, 4> inputShape = { 1, 3, 640, 640 };
 
-        //array<int64_t, 3> outputShape = { 1, 25200, 85 }; //Yolov5
-        //array<int64_t, 3> outputShape = { 1, 84, 8400 }; //Yolov5u, Yolov8, Yolov9, Yolo11, Yolo12
-        array<int64_t, 3> outputShape = { 1, 300, 6 }; //Yolov10
+        //onnx option setting
+        const vector<int64_t> input_dims = { 1, 3, 520, 520 };
+        const vector<int64_t> output_shape = { 1, 21, 520, 520 };
 
-        for (int i = 0; i < querySize; i++) {
+        for (int i = 0; i < querySize; ++i) {
+            // Prepare input/output tensors
             BMTDataType imageVec;
             try {
                 imageVec = get<BMTDataType>(data[i]);
             }
             catch (const std::bad_variant_access& e) {
-                string errorMessage = "Error: bad_variant_access at index " + to_string(i) + ": " + e.what();
-                throw runtime_error(errorMessage.c_str());
+                cerr << "Error: bad_variant_access at index " << i << ". Reason: " << e.what() << endl;
+                continue;
             }
-            vector<float> outputData(outputShape[1] * outputShape[2]);
-            auto inputTensor = Ort::Value::CreateTensor<float>(memory_info, imageVec.data(), imageVec.size(), inputShape.data(), inputShape.size());
-            auto outputTensor = Value::CreateTensor<float>(memory_info, outputData.data(), outputData.size(), outputShape.data(), outputShape.size());
 
-            // Run inference
-            session->Run(runOptions, inputNames.data(), &inputTensor, 1, outputNames.data(), &outputTensor, 1);
+            vector<float> output_data(output_shape[1] * output_shape[2] * output_shape[3]);
+            auto input_tensor = Ort::Value::CreateTensor<float>(
+                memory_info, imageVec.data(), imageVec.size(), input_dims.data(), input_dims.size());
+
+            auto output_tensor = Ort::Value::CreateTensor<float>(
+                memory_info, output_data.data(), output_data.size(),
+                output_shape.data(), output_shape.size());
+
+            session->Run(runOptions, inputNames.data(), &input_tensor, 1, outputNames.data(), &output_tensor, 1);
 
             // Update results
             BMTResult result;
-            result.objectDetectionResult = outputData;
+            result.segmentationResult = output_data;
             results.push_back(result);
         }
         return results;
     }
 };
 
-
 int main(int argc, char* argv[])
 {
     filesystem::path exePath = filesystem::absolute(argv[0]).parent_path();// Get the current executable file path
-    filesystem::path model_path = exePath / "Model" / "ObjectDetection" / "yolov10n_opset12.onnx";
+    filesystem::path model_path = exePath / "Model" / "Segmentation" / "deeplabv3_mobilenet_v3_large_opset12.onnx";
     string modelPath = model_path.string();
     try
     {
-        shared_ptr<AI_BMT_Interface> interface = make_shared<OnjectDetection_Interface_Implementation>();
+        shared_ptr<AI_BMT_Interface> interface = make_shared<ImageSegmentation_Interface_Implementation>();
         AI_BMT_GUI_CALLER caller(interface, modelPath);
         return caller.call_BMT_GUI(argc, argv);
     }

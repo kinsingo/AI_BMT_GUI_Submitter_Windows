@@ -8,6 +8,9 @@
     <ClCompile Include="ObjectDetection_Implementation.cpp">
       <Filter>example\objectDetection</Filter>
     </ClCompile>
+    <ClCompile Include="Image_Segmentation_Implementation.cpp">
+      <Filter>example\segmentation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="example">
@@ -18,6 +21,9 @@
     </Filter>
     <Filter Include="example\objectDetection">
       <UniqueIdentifier>{518f93a2-1976-4196-8d9d-060ff3752366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\segmentation">
+      <UniqueIdentifier>{98d567a0-5c72-4b54-9a27-38aaa6f0b0d9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
