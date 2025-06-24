@@ -93,7 +93,7 @@ public:
         const vector<float> stds = { 0.229, 0.224, 0.225 };
 
         // Transpose (Height, Width, Channel)(224,224,3) to (Chanel, Height, Width)(3,224,224)
-        vector<float> output;
+        BMTDataType output;
         for (size_t ch = 0; ch < 3; ++ch)
         {
             for (size_t i = ch; i < vec.size(); i += 3)
