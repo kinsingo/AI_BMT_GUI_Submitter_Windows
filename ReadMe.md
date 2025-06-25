@@ -1,4 +1,4 @@
-> **Last Updated:** 2025-06-24 — Semantic Segmentation is now supported (example code included)
+> **Last Updated:** 2025-06-26 — Semantic Segmentation is now supported (example code included)
 ## Environment
 1. ISA(Instruction Set Architecture) : AMD64(x86_64)
 2. OS : Windows 10
