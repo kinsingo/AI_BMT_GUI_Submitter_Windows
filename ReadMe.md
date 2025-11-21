@@ -1,4 +1,4 @@
-> **Last Updated:** 2025-10-31
+> **Last Updated:** 2025-11-21 (Version 2.0)
 ## Environment
 1. ISA(Instruction Set Architecture) : AMD64(x86_64)
 2. OS : Windows 10
