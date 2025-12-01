@@ -38,19 +38,6 @@ int main(int argc, char* argv[])
 		};
         return AI_BMT_GUI_CALLER::call_BMT_GUI_For_Multiple_Tasks(argc, argv, interfaceVector);
         */
-    
-
-
-
-
-
-
-
-
-
-
-
-
     }
     catch (const exception& ex)
     {
