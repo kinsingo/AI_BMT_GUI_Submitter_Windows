@@ -215,6 +215,85 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64b
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305:         ]
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(106,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(106,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+  ObjectDetection_Implementation.cpp
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(32,19): warning C4251: 'BMTVisionResult::classProbabilities': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<float,std::allocator<float>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(40,19): warning C4251: 'BMTVisionResult::objectDetectionResult': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<float,std::allocator<float>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(45,19): warning C4251: 'BMTVisionResult::segmentationResult': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<float,std::allocator<float>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(50,19): warning C4251: 'BMTLLMResult::rawOutput': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTLLMResult'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<float,std::allocator<float>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(51,21): warning C4251: 'BMTLLMResult::rawOutputShape': 'std::vector<int64_t,std::allocator<int64_t>>' needs to have dll-interface to be used by clients of 'BMTLLMResult'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<int64_t,std::allocator<int64_t>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(58,12): warning C4251: 'Optional_Data::cpu_type': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(59,12): warning C4251: 'Optional_Data::accelerator_type': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(60,12): warning C4251: 'Optional_Data::submitter': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(61,12): warning C4251: 'Optional_Data::cpu_core_count': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(62,12): warning C4251: 'Optional_Data::cpu_ram_capacity': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(63,12): warning C4251: 'Optional_Data::cooling': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(64,12): warning C4251: 'Optional_Data::cooling_option': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(65,12): warning C4251: 'Optional_Data::cpu_accelerator_interconnect_interface': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(66,12): warning C4251: 'Optional_Data::benchmark_model': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warning C4251: 'Optional_Data::operating_system': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(99,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(99,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   Segmentation_Implementation.cpp
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(32,19): warning C4251: 'BMTVisionResult::classProbabilities': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
   (compiling source file 'Segmentation_Implementation.cpp')
@@ -293,83 +372,6 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warnin
   
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(108,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(108,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
-  llm_Implementation.cpp
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(32,19): warning C4251: 'BMTVisionResult::classProbabilities': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<float,std::allocator<float>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(40,19): warning C4251: 'BMTVisionResult::objectDetectionResult': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<float,std::allocator<float>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(45,19): warning C4251: 'BMTVisionResult::segmentationResult': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<float,std::allocator<float>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(50,19): warning C4251: 'BMTLLMResult::rawOutput': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTLLMResult'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<float,std::allocator<float>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(51,21): warning C4251: 'BMTLLMResult::rawOutputShape': 'std::vector<int64_t,std::allocator<int64_t>>' needs to have dll-interface to be used by clients of 'BMTLLMResult'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<int64_t,std::allocator<int64_t>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(58,12): warning C4251: 'Optional_Data::cpu_type': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(59,12): warning C4251: 'Optional_Data::accelerator_type': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(60,12): warning C4251: 'Optional_Data::submitter': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(61,12): warning C4251: 'Optional_Data::cpu_core_count': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(62,12): warning C4251: 'Optional_Data::cpu_ram_capacity': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(63,12): warning C4251: 'Optional_Data::cooling': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(64,12): warning C4251: 'Optional_Data::cooling_option': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(65,12): warning C4251: 'Optional_Data::cpu_accelerator_interconnect_interface': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(66,12): warning C4251: 'Optional_Data::benchmark_model': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warning C4251: 'Optional_Data::operating_system': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'llm_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\llm_Implementation.cpp(118,46): warning C4101: 'e': unreferenced local variable
   main.cpp
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(32,19): warning C4251: 'BMTVisionResult::classProbabilities': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
   (compiling source file 'main.cpp')
@@ -557,88 +559,7 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64b
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(108,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\llm_Implementation.cpp(118,46): warning C4101: 'e': unreferenced local variable
-  (compiling source file 'main.cpp')
-  
-  ObjectDetection_Implementation.cpp
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(32,19): warning C4251: 'BMTVisionResult::classProbabilities': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<float,std::allocator<float>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(40,19): warning C4251: 'BMTVisionResult::objectDetectionResult': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<float,std::allocator<float>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(45,19): warning C4251: 'BMTVisionResult::segmentationResult': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<float,std::allocator<float>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(50,19): warning C4251: 'BMTLLMResult::rawOutput': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTLLMResult'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<float,std::allocator<float>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(51,21): warning C4251: 'BMTLLMResult::rawOutputShape': 'std::vector<int64_t,std::allocator<int64_t>>' needs to have dll-interface to be used by clients of 'BMTLLMResult'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
-      see declaration of 'std::vector<int64_t,std::allocator<int64_t>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(58,12): warning C4251: 'Optional_Data::cpu_type': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(59,12): warning C4251: 'Optional_Data::accelerator_type': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(60,12): warning C4251: 'Optional_Data::submitter': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(61,12): warning C4251: 'Optional_Data::cpu_core_count': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(62,12): warning C4251: 'Optional_Data::cpu_ram_capacity': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(63,12): warning C4251: 'Optional_Data::cooling': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(64,12): warning C4251: 'Optional_Data::cooling_option': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(65,12): warning C4251: 'Optional_Data::cpu_accelerator_interconnect_interface': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(66,12): warning C4251: 'Optional_Data::benchmark_model': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warning C4251: 'Optional_Data::operating_system': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
-  (compiling source file 'ObjectDetection_Implementation.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
-      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
-  
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(99,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(99,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   Generating Code...
+  LINK : D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\x64\Debug\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit.exe not found or not built by the last incremental link; performing full link
      Creating library D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\x64\Debug\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit.lib and object D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\x64\Debug\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit.exp
   AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit.vcxproj -> D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\x64\Debug\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit.exe
