@@ -139,7 +139,6 @@
     <ClCompile Include="ImageClassification_CustomDataset_Interface_Implementation.cpp" />
     <ClCompile Include="ImageClassification_Implementaion.cpp" />
     <ClCompile Include="Segmentation_Implementation.cpp" />
-    <ClCompile Include="llm_Implementation.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ObjectDetection_Implementation.cpp" />
   </ItemGroup>

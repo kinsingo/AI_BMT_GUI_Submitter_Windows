@@ -11,9 +11,6 @@
     <ClCompile Include="Segmentation_Implementation.cpp">
       <Filter>example\segmentation</Filter>
     </ClCompile>
-    <ClCompile Include="llm_Implementation.cpp">
-      <Filter>example\llm</Filter>
-    </ClCompile>
     <ClCompile Include="ImageClassification_CustomDataset_Interface_Implementation.cpp">
       <Filter>example\classification</Filter>
     </ClCompile>
@@ -30,9 +27,6 @@
     </Filter>
     <Filter Include="example\segmentation">
       <UniqueIdentifier>{98d567a0-5c72-4b54-9a27-38aaa6f0b0d9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="example\llm">
-      <UniqueIdentifier>{d9d93061-5735-4417-9830-f6d2fcc944f6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
