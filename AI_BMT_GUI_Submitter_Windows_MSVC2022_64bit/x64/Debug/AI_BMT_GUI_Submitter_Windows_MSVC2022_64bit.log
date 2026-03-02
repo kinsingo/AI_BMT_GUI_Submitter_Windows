@@ -183,38 +183,38 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warnin
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,39): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,39): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,39): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,39): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,39): warning C4305:         ]
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,46): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,46): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,46): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,46): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,46): warning C4305:         ]
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,53): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,53): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,53): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,53): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,53): warning C4305:         ]
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,38): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,38): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,38): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,38): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,38): warning C4305:         ]
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,45): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,45): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,45): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,45): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,45): warning C4305:         ]
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305:         ]
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(106,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(106,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,39): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,39): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,39): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,39): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,39): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,46): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,46): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,46): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,46): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,46): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,53): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,53): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,53): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,53): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,53): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,38): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,38): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,38): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,38): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,38): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,45): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,45): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,45): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,45): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,45): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,52): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,52): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,52): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,52): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,52): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(110,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(110,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   ObjectDetection_Implementation.cpp
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(32,19): warning C4251: 'BMTVisionResult::classProbabilities': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
@@ -292,8 +292,8 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warnin
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(99,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(99,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(104,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(104,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   Segmentation_Implementation.cpp
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(32,19): warning C4251: 'BMTVisionResult::classProbabilities': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
   (compiling source file 'Segmentation_Implementation.cpp')
@@ -370,8 +370,8 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warnin
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(108,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(108,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(112,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(112,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   main.cpp
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(32,19): warning C4251: 'BMTVisionResult::classProbabilities': 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of 'BMTVisionResult'
   (compiling source file 'main.cpp')
@@ -448,52 +448,52 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warnin
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,39): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,39): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,39): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,39): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,39): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,39): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,39): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,39): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,39): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,39): warning C4305:         ]
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,46): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,46): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,46): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,46): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,46): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,46): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,46): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,46): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,46): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,46): warning C4305:         ]
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,53): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,53): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,53): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,53): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(88,53): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,53): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,53): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,53): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,53): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(92,53): warning C4305:         ]
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,38): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,38): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,38): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,38): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,38): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,38): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,38): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,38): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,38): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,38): warning C4305:         ]
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,45): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,45): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,45): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,45): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,45): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,45): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,45): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,45): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,45): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,45): warning C4305:         ]
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305:         with
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305:         [
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305:             _Ty=float
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(89,52): warning C4305:         ]
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,52): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,52): warning C4305:         with
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,52): warning C4305:         [
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,52): warning C4305:             _Ty=float
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(93,52): warning C4305:         ]
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(106,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(110,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(106,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_Implementaion.cpp(110,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   (compiling source file 'main.cpp')
   
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_CustomDataset_Interface_Implementation.cpp(116,39): warning C4305: 'initializing': truncation from 'double' to '_Ty'
@@ -547,16 +547,16 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64b
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(99,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(104,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(99,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(104,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(108,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(112,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(108,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(112,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   (compiling source file 'main.cpp')
   
   Generating Code...

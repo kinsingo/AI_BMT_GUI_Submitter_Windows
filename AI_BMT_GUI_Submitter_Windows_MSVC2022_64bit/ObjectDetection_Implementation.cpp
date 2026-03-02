@@ -33,6 +33,11 @@ public:
         return InterfaceType::ObjectDetection;
     }
 
+    virtual PowerDeviceType getPowerDeviceType() override
+    {
+        return PowerDeviceType::None;
+    }
+
     virtual void initialize(string modelPath) override
     {
         //session initializer
