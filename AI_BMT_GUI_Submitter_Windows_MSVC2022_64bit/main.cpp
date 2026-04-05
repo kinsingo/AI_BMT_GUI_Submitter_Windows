@@ -18,9 +18,9 @@ int main(int argc, char* argv[])
     try
     {
 		// -- For Single Task --
-        //shared_ptr<AI_BMT_Interface> interface = make_shared<ImageClassification_Interface_Implementation>(); 
+        shared_ptr<AI_BMT_Interface> interface = make_shared<ImageClassification_Interface_Implementation>(); 
         //shared_ptr<AI_BMT_Interface> interface = make_shared<ImageClassification_CustomDataset_Interface_Implementation>();
-        shared_ptr<AI_BMT_Interface> interface = make_shared<ObjectDetection_Interface_Implementation>(); 
+        //shared_ptr<AI_BMT_Interface> interface = make_shared<ObjectDetection_Interface_Implementation>(); 
         //shared_ptr<AI_BMT_Interface> interface = make_shared<ObjectDetection_CustomDataset_Interface_Implementation>();
         //shared_ptr<AI_BMT_Interface> interface = make_shared<Segmentation_Interface_Implementation>(); 
         //shared_ptr<AI_BMT_Interface> interface = make_shared<Segmentation_CustomDataset_Interface_Implementation>(); 
