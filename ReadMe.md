@@ -1,4 +1,4 @@
-> **Last Updated:** 2026-03-25 (Version 2.5)
+> **Last Updated:** 2026-04-06 (Version 2.7)
 ## Environment
 1. ISA(Instruction Set Architecture) : AMD64(x86_64)
 2. OS : Windows 10
@@ -76,7 +76,12 @@ public:
    // - Returns void (we only measure TTFT, don't care about the actual first token output)
    // - Only used for MMLU tasks that require TTFT measurement
    virtual void inferFirstToken(const VariantType& data) {throw runtime_error("inferFirstToken(..) should be implemented for MMLU task");}
-
+   
+   // Custom device power measurement interface
+   // Called at ~100ms intervals during async power sampling when PowerDeviceType::CustomDevice is selected.
+   // Returns a vector of per-channel power samples. Each CustomPowerSample has a channel name and power in watts.
+   // Return a non-empty vector if supported; return an empty vector (default) if not supported.
+   virtual vector<CustomPowerSample> measureCustomPower() { return {}; }
 };
 
 #endif // AI_BMT_INTERFACE_H

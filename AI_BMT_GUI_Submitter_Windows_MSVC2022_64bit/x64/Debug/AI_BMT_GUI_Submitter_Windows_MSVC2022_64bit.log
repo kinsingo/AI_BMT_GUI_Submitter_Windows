@@ -75,6 +75,11 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warnin
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(127,12): warning C4251: 'CustomPowerSample::name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'CustomPowerSample'
+  (compiling source file 'ImageClassification_CustomDataset_Interface_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_CustomDataset_Interface_Implementation.cpp(116,39): warning C4305: 'initializing': truncation from 'double' to '_Ty'
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_CustomDataset_Interface_Implementation.cpp(116,39): warning C4305:         with
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ImageClassification_CustomDataset_Interface_Implementation.cpp(116,39): warning C4305:         [
@@ -179,6 +184,11 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(66,12): warnin
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warning C4251: 'Optional_Data::operating_system': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'ImageClassification_Implementaion.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(127,12): warning C4251: 'CustomPowerSample::name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'CustomPowerSample'
   (compiling source file 'ImageClassification_Implementaion.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
@@ -292,6 +302,11 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warnin
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(127,12): warning C4251: 'CustomPowerSample::name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'CustomPowerSample'
+  (compiling source file 'ObjectDetection_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(104,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\ObjectDetection_Implementation.cpp(104,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   Segmentation_Implementation.cpp
@@ -370,6 +385,11 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warnin
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(127,12): warning C4251: 'CustomPowerSample::name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'CustomPowerSample'
+  (compiling source file 'Segmentation_Implementation.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(112,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\AI_BMT_GUI_Submitter_Windows_MSVC2022_64bit\Segmentation_Implementation.cpp(112,29): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
   main.cpp
@@ -444,6 +464,11 @@ D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(66,12): warnin
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   
 D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(67,12): warning C4251: 'Optional_Data::operating_system': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'Optional_Data'
+  (compiling source file 'main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+D:\AI-BMT\AI_BMT_GUI_Submitter_Windows\include\ai_bmt_interface.h(127,12): warning C4251: 'CustomPowerSample::name': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'CustomPowerSample'
   (compiling source file 'main.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
       see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
