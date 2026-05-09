@@ -34,7 +34,8 @@ struct EXPORT_SYMBOL BMTVisionResult
     // Output tensor from object detection model.
     // This vector stores raw model outputs (e.g., bounding boxes, objectness, class scores).
     // Expected size depends on the YOLO model variant:
-    // - YOLOv5:     25200 × 85 = 2,142,000 elements
+    // - Yolov7:     25200 × 85 = 2,142,000 elements
+	// - Yolov6:     8400 * 85 = 714,000 elements
     // - YOLOv5u/8/9/11/12:  8400 × 84 = 705,600 elements
     // - YOLOv10:    300 × 6 = 1,800 elements
     vector<float> objectDetectionResult;
